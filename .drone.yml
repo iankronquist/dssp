@@ -1,12 +1,11 @@
 image: mattgruter/drone
 script:
-  - wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
+  - wget --quiet http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
   - tar xzf bzip2-1.0.6.tar.gz
-  - cd boost_1_57_0
   - cd bzip2-1.0.6
   - make
   - make install 
-  - wget http://downloads.sourceforge.net/project/boost/boost/1.57.0/boost_1_57_0.tar.gz
+  - wget --quiet http://downloads.sourceforge.net/project/boost/boost/1.57.0/boost_1_57_0.tar.gz
   - tar xzf boost_1_57_0.tar.gz
   - cd boost_1_57_0
   - ./bootstrap.sh

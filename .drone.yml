@@ -1,4 +1,4 @@
-image: layerworx/centos
+image: layerworx/centos:latest
 script:
 	- wget --quiet http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 	- tar xzf bzip2-1.0.6.tar.gz

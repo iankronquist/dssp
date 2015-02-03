@@ -1,6 +1,5 @@
-image: centos:6
+image: layerworx/centos
 script:
-    - yum -y install git gcc gcc-c++ libstdc++
     - cd boost_1_57_0
     - ./bootstrap.sh
     - ./b2 install

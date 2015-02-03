@@ -1,5 +1,6 @@
 image: mattgruter/drone
 script:
+  - yum -y install make
   - wget --quiet http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
   - tar xzf bzip2-1.0.6.tar.gz
   - cd bzip2-1.0.6

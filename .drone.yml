@@ -1,4 +1,4 @@
-image: osl_test/dssp
+image: centos:6
 script:
     - yum -y install git gcc gcc-c++ libstdc++
     - cd boost_1_57_0
